@@ -1,0 +1,112 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Card Container */
+.profile-card {
+    max-width: 42rem; /* 2xl */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Typography & Gradient Name */
+.profile-name {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #3b82f6, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.profile-bio {
+    text-align: center;
+    color: #4b5563;
+    margin-bottom: 2rem;
+}
+
+/* Email Button */
+.email-container {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.email-button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.email-button:hover {
+    background-color: #ec4899;
+}
+
+/* Accordion / Details */
+.certificates-dropdown {
+    border: 1px solid #fbcfe8;
+    border-radius: 0.75rem;
+    padding: 1rem;
+}
+
+.certificates-summary {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: #db2777;
+}
+
+/* Responsive Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+    .image-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Certificate Images */
+.cert-img {
+    width: 100%;
+    border-inline: 2px;
+    border-style: solid;
+    border-radius: 0.5rem;
+}
+
+.border-blue { border-color: #bfdbfe; }
+.border-pink { border-color: #fbcfe8; }
+
+/* Footer */
+.profile-footer {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 2.5rem;
+}
+
+.download-link{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    background: #222;
+    color: white;
+}
